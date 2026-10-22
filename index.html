@@ -1297,37 +1297,239 @@
           <div class="section-kicker">Reto de Beto</div>
           <h2>Practica y recibe retroalimentación.</h2>
           <p>
-            Un ejemplo de actividad rápida para que la página no sea solamente lectura.
+            Diez retos rápidos: uno por cada tema del recorrido.
           </p>
         </div>
 
-        <div class="quiz-layout">
-          <div class="beto-box">
-            <div class="beto-mini">∑</div>
-            <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
-            <p style="color:var(--muted);line-height:1.65;">
-              Recuerda que en la forma <strong>y = mx + b</strong>,
-              el valor de <strong>m</strong> representa la pendiente.
-            </p>
+        <div style="display:grid;gap:28px;">
+
+          <!-- RETO 01 -->
+          <div class="quiz-layout quiz-item" data-correct="6√2" data-success="✅ <strong>¡Correcto!</strong> √72 = √(36·2) = 6√2." data-hint="💡 Busca un cuadrado perfecto dentro de 72. Recuerda que 72 = 36·2.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 01</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Para simplificar un radical, busca dentro del número un factor que sea un cuadrado perfecto.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Exponentes y radicales</h3>
+              <p>¿Cuál es la forma simplificada de <strong>√72</strong>?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="6√2">A. 6√2</button>
+                <button class="option" data-answer="8√2">B. 8√2</button>
+                <button class="option" data-answer="6√3">C. 6√3</button>
+                <button class="option" data-answer="36√2">D. 36√2</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
           </div>
 
-          <div class="quiz-card glass">
-            <h3>¿Cuál es la pendiente?</h3>
-            <p>Analiza la ecuación: <strong>y = 3x + 4</strong></p>
-
-            <div class="quiz-options">
-              <button class="option" data-answer="4">A. 4</button>
-              <button class="option" data-answer="-3">B. -3</button>
-              <button class="option" data-answer="3">C. 3</button>
-              <button class="option" data-answer="1/3">D. 1/3</button>
+          <!-- RETO 02 -->
+          <div class="quiz-layout quiz-item" data-correct="x + 4" data-success="✅ <strong>¡Correcto!</strong> x² − 16 = (x−4)(x+4), por eso se simplifica a x + 4, con x ≠ 4." data-hint="💡 Factoriza primero x² − 16 como una diferencia de cuadrados.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 02</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Antes de cancelar factores en una expresión racional, factoriza numerador y denominador.</p>
             </div>
-
-            <div class="feedback" id="quizFeedback">
-              Selecciona una opción para comprobar tu respuesta.
+            <div class="quiz-card glass">
+              <h3>Expresiones racionales</h3>
+              <p>Simplifica: <strong>(x² − 16) / (x − 4)</strong></p>
+              <div class="quiz-options">
+                <button class="option" data-answer="x - 4">A. x − 4</button>
+                <button class="option" data-answer="x + 4">B. x + 4</button>
+                <button class="option" data-answer="x² + 4">C. x² + 4</button>
+                <button class="option" data-answer="4x">D. 4x</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
             </div>
-
-            <button class="btn btn-secondary" id="resetQuiz">Intentar de nuevo</button>
           </div>
+
+          <!-- RETO 03 -->
+          <div class="quiz-layout quiz-item" data-correct="7" data-success="✅ <strong>¡Correcto!</strong> 4x − 7 = 21 → 4x = 28 → x = 7." data-hint="💡 Primero suma 7 en ambos lados y después divide entre 4.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 03</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Mantén el equilibrio de la ecuación: lo que haces en un lado, también debes hacerlo en el otro.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Ecuaciones</h3>
+              <p>Resuelve: <strong>4x − 7 = 21</strong></p>
+              <div class="quiz-options">
+                <button class="option" data-answer="5">A. 5</button>
+                <button class="option" data-answer="6">B. 6</button>
+                <button class="option" data-answer="7">C. 7</button>
+                <button class="option" data-answer="8">D. 8</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 04 -->
+          <div class="quiz-layout quiz-item" data-correct="Q45" data-success="✅ <strong>¡Correcto!</strong> C = 15 + 6(5) = 45. El viaje cuesta Q45." data-hint="💡 Suma la tarifa fija a seis quetzales por cada uno de los 5 kilómetros.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 04</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">En un modelo identifica primero la cantidad fija y luego la parte que cambia.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Modelado con ecuaciones</h3>
+              <p>Un taxi cobra <strong>Q15</strong> de base y <strong>Q6 por km</strong>. ¿Cuánto cuestan 5 km?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="Q30">A. Q30</button>
+                <button class="option" data-answer="Q35">B. Q35</button>
+                <button class="option" data-answer="Q45">C. Q45</button>
+                <button class="option" data-answer="Q75">D. Q75</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 05 -->
+          <div class="quiz-layout quiz-item" data-correct="(2, 6)" data-success="✅ <strong>¡Correcto!</strong> M = ((−2+6)/2, (4+8)/2) = (2, 6)." data-hint="💡 Promedia por separado las coordenadas x y las coordenadas y.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 05</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">El punto medio está exactamente a la mitad entre dos puntos: promedia sus coordenadas.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Geometría de coordenadas</h3>
+              <p>¿Cuál es el punto medio entre <strong>(−2,4)</strong> y <strong>(6,8)</strong>?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="(2, 6)">A. (2, 6)</button>
+                <button class="option" data-answer="(4, 6)">B. (4, 6)</button>
+                <button class="option" data-answer="(2, 4)">C. (2, 4)</button>
+                <button class="option" data-answer="(8, 12)">D. (8, 12)</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 06 -->
+          <div class="quiz-layout quiz-item" data-correct="-2" data-success="✅ <strong>¡Correcto!</strong> En y = mx + b, la pendiente es m. Aquí m = −2." data-hint="💡 Observa el coeficiente que multiplica a x cuando la ecuación está en la forma y = mx + b.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 06</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Cuando la recta está escrita como y = mx + b, el coeficiente de x corresponde a la pendiente.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Rectas</h3>
+              <p>¿Cuál es la pendiente de <strong>y = −2x + 7</strong>?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="7">A. 7</button>
+                <button class="option" data-answer="2">B. 2</button>
+                <button class="option" data-answer="-2">C. −2</button>
+                <button class="option" data-answer="-7">D. −7</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 07 -->
+          <div class="quiz-layout quiz-item" data-correct="5" data-success="✅ <strong>¡Correcto!</strong> f(3) = 3² − 4 = 9 − 4 = 5." data-hint="💡 Evaluar una función significa sustituir x por el valor indicado.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 07</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Para evaluar f(3), sustituye cada x de la función por 3.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Funciones</h3>
+              <p>Si <strong>f(x) = x² − 4</strong>, ¿cuánto vale <strong>f(3)</strong>?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="3">A. 3</button>
+                <button class="option" data-answer="5">B. 5</button>
+                <button class="option" data-answer="9">C. 9</button>
+                <button class="option" data-answer="13">D. 13</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 08 -->
+          <div class="quiz-layout quiz-item" data-correct="Mínimo" data-success="✅ <strong>¡Correcto!</strong> Si una parábola abre hacia arriba, el vértice es su punto más bajo: un mínimo." data-hint="💡 Imagina una parábola con forma de U. ¿El vértice está arriba o abajo?">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 08</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Analizar una gráfica significa interpretar qué representan sus puntos y su comportamiento.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Análisis de funciones</h3>
+              <p>Si una parábola abre hacia arriba, su vértice representa un:</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="Máximo">A. Máximo</button>
+                <button class="option" data-answer="Mínimo">B. Mínimo</button>
+                <button class="option" data-answer="Cero">C. Cero</button>
+                <button class="option" data-answer="Dominio">D. Dominio</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 09 -->
+          <div class="quiz-layout quiz-item" data-correct="x = -2" data-success="✅ <strong>¡Correcto!</strong> x = −b/(2a) = −8/(2·2) = −2." data-hint="💡 Usa el eje de simetría: x = −b / (2a). Aquí a = 2 y b = 8.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 09</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">El eje de simetría de una función cuadrática se encuentra con x = −b/(2a).</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Funciones cuadráticas</h3>
+              <p>Para <strong>f(x) = 2x² + 8x + 5</strong>, ¿cuál es el eje de simetría?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="x = -4">A. x = −4</button>
+                <button class="option" data-answer="x = -2">B. x = −2</button>
+                <button class="option" data-answer="x = 2">C. x = 2</button>
+                <button class="option" data-answer="x = 4">D. x = 4</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <!-- RETO 10 -->
+          <div class="quiz-layout quiz-item" data-correct="2 y 3" data-success="✅ <strong>¡Correcto!</strong> x² − 5x + 6 = (x−2)(x−3), por lo que sus ceros son 2 y 3." data-hint="💡 Busca dos números que multiplicados den 6 y sumados den −5.">
+            <div class="beto-box">
+              <div class="beto-mini">∑</div>
+              <div class="section-kicker">Tema 10</div>
+              <h3 style="font-size:1.55rem;margin-bottom:8px;">Pista de Beto</h3>
+              <p style="color:var(--muted);line-height:1.65;">Los ceros de una función son los valores de x que hacen que f(x) sea igual a cero.</p>
+            </div>
+            <div class="quiz-card glass">
+              <h3>Funciones polinomiales y ceros reales</h3>
+              <p>¿Cuáles son los ceros de <strong>x² − 5x + 6</strong>?</p>
+              <div class="quiz-options">
+                <button class="option" data-answer="1 y 6">A. 1 y 6</button>
+                <button class="option" data-answer="-2 y -3">B. −2 y −3</button>
+                <button class="option" data-answer="2 y 3">C. 2 y 3</button>
+                <button class="option" data-answer="-1 y -6">D. −1 y −6</button>
+              </div>
+              <div class="feedback">Selecciona una opción para comprobar tu respuesta.</div>
+              <button class="btn btn-secondary reset-quiz">Intentar de nuevo</button>
+            </div>
+          </div>
+
+          <div id="quizScoreSummary" class="glass" style="display:none;margin-top:28px;padding:24px;border-radius:22px;text-align:center;">
+            <div class="section-kicker">Resultado de la práctica</div>
+            <h3 id="quizScoreTitle" style="font-size:1.8rem;margin:8px 0 6px;">Tu nota</h3>
+            <div id="quizScoreValue" style="font-size:2.6rem;font-weight:1000;color:var(--primary-2);margin:8px 0;"></div>
+            <p id="quizScoreMessage" style="color:var(--muted);line-height:1.6;"></p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1349,7 +1551,6 @@
           <article class="team-card glass"><div class="team-photo">👤</div><h3>Nombre del integrante 3</h3><div class="team-topic">Tema asignado</div></article>
           <article class="team-card glass"><div class="team-photo">👤</div><h3>Nombre del integrante 4</h3><div class="team-topic">Tema asignado</div></article>
           <article class="team-card glass"><div class="team-photo">👤</div><h3>Nombre del integrante 5</h3><div class="team-topic">Tema asignado</div></article>
-          <article class="team-card glass"><div class="team-photo">👤</div><h3>Nombre del integrante 6</h3><div class="team-topic">Tema asignado</div></article>
         </div>
       </div>
     </section>
@@ -1608,7 +1809,14 @@
     const toast = document.getElementById("toast");
 
     let currentTopic = null;
-    let userName = localStorage.getItem("precalcStudentName") || "";
+    // La sesión permanece activa aunque se cierre la pestaña o el navegador.
+    // Únicamente el botón “Salir” elimina esta sesión activa.
+    const ACTIVE_USER_KEY = "precalcActiveUser";
+    let userName = localStorage.getItem(ACTIVE_USER_KEY) || localStorage.getItem("precalcStudentName") || "";
+    if(userName){
+      localStorage.setItem(ACTIVE_USER_KEY,userName);
+      localStorage.setItem("precalcStudentName",userName);
+    }
     let completed = JSON.parse(localStorage.getItem("precalcCompletedAuto") || "[]");
     let topicViews = JSON.parse(localStorage.getItem("precalcTopicViews") || "{}");
     let diplomaCode = localStorage.getItem("precalcDiplomaCode") || "";
@@ -1660,6 +1868,7 @@
       if(name.length < 3){ showToast("Escribe tu nombre completo para continuar."); return; }
       userName = name;
       localStorage.setItem("precalcStudentName",userName);
+      localStorage.setItem(ACTIVE_USER_KEY,userName);
       updateUserUI(); closeNameModal(); updateProgress();
       document.getElementById("temas").scrollIntoView({behavior:"smooth"});
       showToast(`¡Bienvenido/a, ${userName}!`);
@@ -1668,6 +1877,7 @@
 
     document.getElementById("logoutBtn").addEventListener("click",()=>{
       localStorage.removeItem("precalcStudentName");
+      localStorage.removeItem(ACTIVE_USER_KEY);
       localStorage.removeItem("precalcCompletedAuto");
       localStorage.removeItem("precalcTopicViews");
       localStorage.removeItem("precalcDiplomaCode");
@@ -1913,10 +2123,89 @@
     const menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");menuBtn.addEventListener("click",()=>navLinks.classList.toggle("open"));navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>navLinks.classList.remove("open")));
     document.getElementById("helpBtn").addEventListener("click",()=>showToast("Beto dice: usa el laboratorio para comprobar, pero explica siempre tu procedimiento ✨"));
 
-    // Quiz existente
-    const feedback=document.getElementById("quizFeedback"),optionButtons=document.querySelectorAll(".option");optionButtons.forEach(btn=>btn.addEventListener("click",()=>{optionButtons.forEach(b=>b.classList.remove("correct","wrong"));if(btn.dataset.answer==="3"){btn.classList.add("correct");feedback.innerHTML="✅ <strong>¡Correcto!</strong> En y = mx + b, m representa la pendiente. Aquí m = 3.";}else{btn.classList.add("wrong");feedback.innerHTML="💡 Todavía no. Observa el coeficiente de x en la forma y = mx + b.";}}));document.getElementById("resetQuiz").addEventListener("click",()=>{optionButtons.forEach(b=>b.classList.remove("correct","wrong"));feedback.textContent="Selecciona una opción para comprobar tu respuesta.";});
+    // ====================== PRÁCTICA SECUENCIAL ======================
+    // Solo se muestra un reto a la vez. Para avanzar es obligatorio elegir una respuesta.
+    const quizItems=[...document.querySelectorAll(".quiz-item")];
+    let currentQuizIndex=0;
+
+    function showQuiz(index){
+      currentQuizIndex=index;
+      quizItems.forEach((quiz,i)=>{
+        quiz.style.display=i===index?"grid":"none";
+      });
+      const current=quizItems[index];
+      if(current){
+        current.scrollIntoView({behavior:"smooth",block:"center"});
+      }
+    }
+
+    quizItems.forEach((quiz,index)=>{
+      const feedback=quiz.querySelector(".feedback");
+      const optionButtons=[...quiz.querySelectorAll(".option")];
+      const nextButton=quiz.querySelector(".reset-quiz");
+      let answered=false;
+
+      // El botón que antes decía "Intentar de nuevo" ahora sirve para avanzar.
+      nextButton.textContent=index===quizItems.length-1?"Finalizar práctica":"Siguiente →";
+      nextButton.disabled=true;
+      nextButton.style.opacity=".55";
+      nextButton.style.cursor="not-allowed";
+
+      optionButtons.forEach(btn=>btn.addEventListener("click",()=>{
+        optionButtons.forEach(b=>b.classList.remove("correct","wrong"));
+        answered=true;
+
+        if(btn.dataset.answer===quiz.dataset.correct){
+          btn.classList.add("correct");
+          feedback.innerHTML=quiz.dataset.success;
+          quiz.dataset.selectedCorrect="true";
+        }else{
+          btn.classList.add("wrong");
+          feedback.innerHTML=quiz.dataset.hint;
+          quiz.dataset.selectedCorrect="false";
+        }
+
+        nextButton.disabled=false;
+        nextButton.style.opacity="1";
+        nextButton.style.cursor="pointer";
+      }));
+
+      nextButton.addEventListener("click",()=>{
+        if(!answered) return;
+
+        if(index<quizItems.length-1){
+          showQuiz(index+1);
+        }else{
+          const correctAnswers=quizItems.filter(q=>q.dataset.selectedCorrect==="true").length;
+          const total=quizItems.length;
+          const percent=Math.round((correctAnswers/total)*100);
+          const scoreBox=document.getElementById("quizScoreSummary");
+          document.getElementById("quizScoreValue").textContent=`${correctAnswers}/${total} · ${percent}%`;
+          document.getElementById("quizScoreMessage").textContent=
+            percent>=90 ? "¡Excelente trabajo! Dominaste muy bien esta práctica." :
+            percent>=70 ? "¡Buen trabajo! Vas muy bien; revisa los temas donde tuviste dificultad." :
+            percent>=60 ? "Vas avanzando. Te conviene repasar algunos temas antes de continuar." :
+            "Te recomendamos repasar los temas y volver a practicar para reforzar lo aprendido.";
+          scoreBox.style.display="block";
+          scoreBox.scrollIntoView({behavior:"smooth",block:"center"});
+          showToast("🎉 ¡Completaste los 10 retos de práctica!");
+        }
+      });
+    });
+
+    if(quizItems.length) showQuiz(0);
 
     window.addEventListener("resize",()=>requestAnimationFrame(()=>{plotUniversalGraph();calculateGeometry();}));
+
+    // Restaurar la sesión cuando la página se abre o vuelve desde el historial del navegador.
+    window.addEventListener("pageshow",()=>{
+      const activeUser = localStorage.getItem(ACTIVE_USER_KEY) || localStorage.getItem("precalcStudentName") || "";
+      if(activeUser && activeUser !== userName){
+        userName = activeUser;
+        updateUserUI();
+        updateProgress();
+      }
+    });
 
     renderTopics(); updateUserUI(); updateProgress();
     requestAnimationFrame(()=>{plotUniversalGraph();calculateGeometry();});
