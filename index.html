@@ -1638,6 +1638,8 @@
   <div class="toast" id="toast">Listo</div>
 
   <script>
+    // Siempre iniciar la página desde arriba.
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     const topics = [
       {
         n: 1,
@@ -1870,7 +1872,7 @@
       localStorage.setItem("precalcStudentName",userName);
       localStorage.setItem(ACTIVE_USER_KEY,userName);
       updateUserUI(); closeNameModal(); updateProgress();
-      document.getElementById("temas").scrollIntoView({behavior:"smooth"});
+      window.scrollTo({top:0,left:0,behavior:"smooth"});
       showToast(`¡Bienvenido/a, ${userName}!`);
     });
     document.getElementById("studentNameInput").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("saveStudentName").click();});
@@ -2205,7 +2207,11 @@
         updateUserUI();
         updateProgress();
       }
+      // Aunque el navegador recuerde dónde quedó la página, PRECALC LAB abre siempre en Inicio.
+      window.scrollTo(0,0);
     });
+
+    window.addEventListener("load",()=>window.scrollTo(0,0));
 
     renderTopics(); updateUserUI(); updateProgress();
     requestAnimationFrame(()=>{plotUniversalGraph();calculateGeometry();});
